@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="mt-4">Bank of SuziRubi</h1>
+        </div>
+      </div>
+      <form id="bankForm">
+        <div id="openAccount">
+          <div class="row initialDeposit">
+            <div class="col-12">
+              <h3>Open an Account at the Bank of Suzi</h3>
+              <div class="input-group mr-4 mb-2">
+                <div class="input-group-prepend">
+                <span class="input-group-text">Name:</span>
+                </div>
+                <input type="text" id="userName">
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text">Deposit:</span>
+                </div>
+                <input type="text" id="initialDeposit">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="useAccount">
+          <div class="row">
+            <div class="col-5 depositFunds">
+              <h5>Make a Deposit</h5>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Amount:</span>
+                </div>
+                <input type="text" id="userDeposit">
+              </div>
+            </div>
+            <div class="col-auto">
+            </div>
+            <div class="col-5 withdrawFunds">
+              <h5>Make a Withdrawal</h5>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Amount:</span>
+                </div>
+                <input type="text" id="userWithdrawal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit" id="submitTransaction" class="btn btn-info">Enter Transaction</button>
+          </div>
+        </div>
+      </form>
+      <div class="row" id="currentBalance">
+        <div class="col-12">
+          <h3><span class="showUserName"></span>  Current Balance is: $ <span class="showBalance"></span></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
